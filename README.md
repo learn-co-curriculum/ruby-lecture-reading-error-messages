@@ -4,11 +4,11 @@
 
 In this lab, you'll be reading error messages from tests. This lab is designed so that both running the files *and* running the test suite via the `learn` command will show the error messages for you to decode. Moving forward though, you'll be reading error messages mainly through running the test suite.
 
-Get started by opening this lab with `learn open` so you can follow along with the video and solve this lab.
+Get started by opening this lab with `learn open` (or by pressing the Open button on the toolbar) so you can follow along with the video and solve this lab.
 
 ## Objectives
 
-1. Read the three different parts of an errors message.
+1. Read the three different parts of an error message.
 2. Identify four error types- name errors, syntax errors, types errors, and division errors- and fix them
 3. Describe a test suite, where it's found in a lab, and its purpose
 4. Use the `learn` command in terminal to run the tests for a lab.
@@ -96,7 +96,7 @@ DivisionErrors are caused when a given number is divided by 0.
 
 The tests for each lab will be found inside the `spec` directory of that lab. Tests are programs, written using the RSpec testing library, that are written to make sure your program is running properly. Generally, tests will call on the methods you define in your programs and check to see if they are working the way they are expected to.
 
-In the future, you will learn how to read tests more thoroughly and even how to write your own tests. For now, all you need to understand is that the code in the `spec` directory is there to test the code in your program. When you run the `learn` or the `rspec` command in your terminal in the directory of the lab you are working on, the runs the code in your `spec` file and tests your program. The output that appears in your terminal is the result of running those tests. If you pass a test, the output will generally appear green, otherwise, it will appear red and be accompanied by the types of error messages that we're discussing in this Readme. Paying attention to those error messages will help you to pass the test.
+In the future, you will learn how to read tests more thoroughly and even how to write your own tests. For now, all you need to understand is that the code in the `spec` directory is there to test the code in your program. When you run the `learn` or the `rspec` command in your terminal in the directory of the lab you are working on, that runs the code in your `spec` file and tests your program. The output that appears in your terminal is the result of running those tests. If you pass a test, the output will generally appear green, otherwise, it will appear red and be accompanied by the types of error messages that we're discussing in this Readme. Paying attention to those error messages will help you to pass the test.
 
 
 ## Instructions
@@ -109,7 +109,7 @@ Did you watch it? Okay, great. Let's proceed. The point of this lab is to get yo
 
 2. Run each of the files in the `lib` directory using the `ruby` command.
 
-  * From the lab directory, try: `ruby lib/a_division_by_zero_error.rb` to run that program. You should get output about an error in the program. Read the error message and open that file in Sublime and see if you can fix the error. When the error is fixed and you run the file via `ruby`, you'll simply see no output at all, no errors or anything. Confirm this by running the `learn` command and seeing that you have a passing test and 3 remaining failures.
+  * From the lab directory, try: `ruby lib/a_division_by_zero_error.rb` to run that program. You should get output about an error in the program. Read the error message and open that file in your text editor and see if you can fix the error. When the error is fixed and you run the file via `ruby`, you'll simply see no output at all, no errors or anything. Confirm this by running the `learn` command and seeing that you have a passing test and 3 remaining failures.
 
   * Run each file via `ruby lib/<file name>`, fix the errors, and confirm with `learn` until you're done and all the tests pass. Pay attention to the filenames in `lib` if you need hints for what kind of error to look for.
 
