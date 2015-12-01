@@ -9,7 +9,7 @@ Get started by opening this lab with `learn open` (or by pressing the Open butto
 ## Objectives
 
 1. Read the three different parts of an error message.
-2. Identify four error types- name errors, syntax errors, types errors, and division errors- and fix them
+2. Identify four error types- name errors, syntax errors, type errors, and division errors- and fix them
 3. Describe a test suite, where it's found in a lab, and its purpose
 4. Use the `learn` command in terminal to run the tests for a lab.
 
@@ -51,7 +51,7 @@ The interpreter does the best job it can to tell you what it thinks went wrong.
 (NameError)
 ```
 
-This is a [Ruby Error Type](http://www.ruby-doc.org/core-2.2.0/Exception.html)
+This is a [Ruby Error Type](http://www.ruby-doc.org/core-2.2.0/Exception.html).
 
 You've solved games of *Clue* with less information. This is my favorite part of programming, debugging, fixing errors. It's like you're a detective solving a crime. The only bad thing is that more often than not, you're also the criminal that caused the error in the first place.
 
@@ -63,7 +63,7 @@ Errors are clues, reading them is the interpreter telling you what to do to fix 
 NameErrors are caused when a given name is invalid or undefined. Whenever the Ruby interpreter encounters a word it doesn't recognize, it assumes that word is the name of a variable or a method. If that word was never defined as either a variable or a method, it will result in a name error.
 
 ### Syntax Errors
-Syntax errors are pretty self explanatory: they're the result of incorrect syntax. Thankfully, they're usually followed by a guess about the location of the error. For instance:
+Syntax errors are pretty self-explanatory: they're the result of incorrect syntax. Thankfully, they're usually followed by a guess about the location of the error. For instance:
 
 ```ruby
 2.times do
@@ -76,7 +76,7 @@ Will result in:
 ```
 Here, Ruby is saying that on line 2, there is a missing `end` (every `do` keyword must be followed by some code and then an `end` keyword). Always read the full details of syntax errors and look for line numbers, which usually appear at the beginning of the error message.
 
-### TypeErrors
+### Type Errors
 
 When you try and do a mathematical operation on two objects of a different type, you will receive a TypeError.  For example if you try and add a string to an integer, Ruby will complain.
 
@@ -89,14 +89,14 @@ Will produce the following error:
 TypeError: String can't be coerced into Fixnum
 ```
 
-### DivisionErrors
+### Division Errors
 DivisionErrors are caused when a given number is divided by 0.
 
 ## What is a Test Suite?
 
 The tests for each lab will be found inside the `spec` directory of that lab. Tests are programs, written using the RSpec testing library, that are written to make sure your program is running properly. Generally, tests will call on the methods you define in your programs and check to see if they are working the way they are expected to.
 
-In the future, you will learn how to read tests more thoroughly and even how to write your own tests. For now, all you need to understand is that the code in the `spec` directory is there to test the code in your program. When you run the `learn` or the `rspec` command in your terminal in the directory of the lab you are working on, that runs the code in your `spec` file and tests your program. The output that appears in your terminal is the result of running those tests. If you pass a test, the output will generally appear green, otherwise, it will appear red and be accompanied by the types of error messages that we're discussing in this Readme. Paying attention to those error messages will help you to pass the test.
+In the future, you will learn how to read tests more thoroughly and even how to write your own tests. For now, all you need to understand is that the code in the `spec` directory is there to test the code in your program. When you run the `learn` or the `rspec` command in your terminal in the directory of the lab you are working on, that runs the code in your `spec` file and tests your program. The output that appears in your terminal is the result of running those tests. If you pass a test, the output will generally appear green, otherwise, it will appear red and be accompanied by the types of error messages that we're discussing in this README. Paying attention to those error messages will help you to pass the test.
 
 
 ## Instructions
