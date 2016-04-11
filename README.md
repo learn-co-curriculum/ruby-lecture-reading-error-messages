@@ -17,7 +17,7 @@ Get started by opening this lab with `learn open` (or by pressing the Open butto
 
 <iframe width="960" height="720" src="https://www.youtube.com/embed/L_eoziYKLXw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-[Download MP4]([MP4](http://flatiron-videos.s3.amazonaws.com/ironboard/ruby/ruby-lecture-reading-error-messages/ruby-lecture-reading-error-messages.mp4))
+[Download MP4](http://flatiron-videos.s3.amazonaws.com/ironboard/ruby/ruby-lecture-reading-error-messages/ruby-lecture-reading-error-messages.mp4)
 
 ## Reading Error Messages
 
@@ -34,7 +34,7 @@ lib/a_name_error.rb:3:in `<main>':
 ```
 
 * `lib/a_name_error.rb` is the file the error occurred in.
-* `3` is the line of code the error.
+* `3` is the line of code with the error.
 * `<main>` is the scope of the error.
 
 2) The description, the "why".
@@ -53,9 +53,9 @@ The interpreter does the best job it can to tell you what it thinks went wrong.
 
 This is a [Ruby Error Type](http://www.ruby-doc.org/core-2.2.0/Exception.html).
 
-You've solved games of *Clue* with less information. This is my favorite part of programming, debugging, fixing errors. It's like you're a detective solving a crime. The only bad thing is that more often than not, you're also the criminal that caused the error in the first place.
+You've solved games of *Clue* with less information. This is one of the best parts of programming: debugging and fixing errors. It's like you're a detective solving a crime. The only bad thing is that more often than not, you're also the criminal that caused the error in the first place.
 
-Errors are clues, reading them is the interpreter telling you what to do to fix the program and move on.
+Errors are clues, and reading them is the interpreter telling you what to do to fix the program and move on.
 
 ## Four Common Error Types
 
@@ -101,18 +101,29 @@ In the future, you will learn how to read tests more thoroughly and even how to 
 
 ## Instructions
 
-STOP. If you haven't watched the above video, you are making life much harder for yourself! Watch the video lecture above before attempting this lab : )
+STOP. If you haven't watched the above video, you are making life much harder for yourself! Watch the video lecture above before attempting this lab. : )
 
 Did you watch it? Okay, great. Let's proceed. The point of this lab is to get you comfortable reading error messages and fixing simple programs.
 
 1. Open this lab with `learn open`.
 
-2. Run each of the files in the `lib` directory using the `ruby` command.
+2. Run `learn` from the root of the lab's directory. You should see a lot of red — this is okay! Tests have failed, and now we can fix them.
 
-  * From the lab directory, try: `ruby lib/a_division_by_zero_error.rb` to run that program. You should get output about an error in the program. Read the error message and open that file in your text editor and see if you can fix the error. When the error is fixed and you run the file via `ruby`, you'll simply see no output at all, no errors or anything. Confirm this by running the `learn` command and seeing that you have a passing test and 3 remaining failures.
+  * Read the errors. Scroll through the entire output to get a sense of what the failures are trying to tell you. What does `expected no Exception, got #<NameError: undefined local variable or method `hello_world' for main:Object> with backtrace` mean? How can we fix it?
 
-  * Run each file via `ruby lib/<file name>`, fix the errors, and confirm with `learn` until you're done and all the tests pass. Pay attention to the filenames in `lib` if you need hints for what kind of error to look for.
+  * Each error prints out a **stack trace**, which points to where the code failed and attempts to follow it _up the stack_ — that is, through the bits of code that ran leading up to the failure. You can use these stack traces to pinpoint which line(s) of code need your attention.
 
-3. Once your code is passing with the `learn` command, submit the lab with `learn submit`
+  * These stack traces can also point you to which files you should run to get a better sense of the errors. Which leads us to step 3:
+
+3. Run each of the files in the `lib` directory using the `ruby` command.
+
+  * From the lab directory, try: `ruby lib/a_division_by_zero_error.rb` to run that program. You should get output about an error in the program. Read the error message and open that file in your text editor and see if you can fix the error. When the error is fixed and you run the file via `ruby`, you'll simply see no output at all, no errors or anything. Confirm this by running the `learn` command and seeing that you have a passing test and 3 remaining failures. For example, if you see a `ZeroDivisionError`, you'll have to figure out *where* Ruby is trying to divide by 0 and change the code so that the division operation is valid (i.e., something other than 0).
+
+  * Run each file via `ruby lib/<file name>`, fix the errors, and confirm with `learn`. Then follow the next error's stack trace back to the next failing file in `lib/` and repeat the fixing process until you're done and all the tests pass. Pay attention to the filenames in `lib` if you need hints for what kind of error to look for.
+
+4. Once your code is passing with the `learn` command, submit the lab with `learn submit`
 
 Feel proud, being able to read an error message and fix it, no matter how basic, is a huge step in being a programmer. Get comfortable with broken code, it's totally normal in programming.
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-lecture-reading-error-messages' title='Intro to Reading Ruby Error Messages'>Intro to Reading Ruby Error Messages</a> on Learn.co and start learning to code for free.</p>
+
