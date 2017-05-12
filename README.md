@@ -1,4 +1,5 @@
 # Intro to Reading Ruby Error Messages
+hi
 
 ## Overview
 
