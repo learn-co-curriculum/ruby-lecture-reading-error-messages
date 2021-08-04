@@ -21,7 +21,7 @@ you can follow along with the video and solve this lab.
 ## Video
 
 <video width="640" height="480" controls>
-  <source src="[movie.mp4](http://flatiron-videos.s3.amazonaws.com/ironboard/ruby/ruby-lecture-reading-error-messages/ruby-lecture-reading-error-messages.mp4)" type="video/mp4">
+  <source src="http://flatiron-videos.s3.amazonaws.com/ironboard/ruby/ruby-lecture-reading-error-messages/ruby-lecture-reading-error-messages.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
