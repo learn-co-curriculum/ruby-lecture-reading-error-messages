@@ -7,8 +7,8 @@ so that both running the files _and_ running the test suite via the `learn`
 command will show the error messages for you to decode. Moving forward though,
 you'll be reading error messages mainly through running the test suite.
 
-Get started by opening this lab by pressing the Open button on the toolbar so
-you can follow along with the video and solve this lab.
+Click the Fork button to make a copy of this lesson, then clone and download
+it so you can code along in your local environment.
 
 ## Objectives
 
